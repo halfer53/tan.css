@@ -33,14 +33,14 @@ h1,h2,h3,h4,h5,h6 {font-size: inherit;font-family:inherit;font-weight: normal;co
 margin: 0 10px 0 0;}
 .navbar .nav li {float: left;}
 .navbar .nav * li {float: none;}
-.navbar .nav li a {display: block;*display: inline;floa+t: none;
+.navbar .nav li a {display: block;*display: inline;float: none;
 padding: 10px 20px 10px;text-decoration: none;*zoom: 1;}
 .navbar .nav * li a {padding: 0;color: inherit;text-decoration: inherit;}
 .navbar .nav li * a {padding: 0;color: inherit;text-decoration: inherit;}
 
 .inline-fix{display: inline-block; width: 100%; height: 0; overflow: hidden;}
 
-a.ihover:hover img{opacity: 0.7; filter: alpha(opacity=70);}
+a.ihover:hover img{opacity: 0.7; filter: alpha(opacity=70);-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";}
 
 a.bhover{border: 1px transparent;} 
 a.bhover:hover img{border: 1px solid #000;} 
@@ -55,7 +55,7 @@ a.bhover:hover img{border: 1px solid #000;}
 
 .ov-hidden{overflow: hidden;}
 .ov-auto{overflow: auto;}
-.ellipsis{text-overflow: ellipsis; overflow: hidden;}
+.ellipsis{text-overflow: ellipsis; overflow: hidden;-ms-text-overflow: ellipsis;}
 .v-hidden{visibility: hidden;}
 .v-visible{visibility: visible;}
 .dis-n{display: none !important;}
@@ -278,7 +278,8 @@ text-align: center;text-decoration: none;text-shadow: 1px 1px rgba(0,0,0,.1);fon
 cursor: pointer;overflow: visible;}
 .btn:hover, .btn:focus { text-decoration: none; background-image: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.1)); }
 .btn:focus { outline: thin dotted; outline: 5px auto -webkit-focus-ring-color; outline-offset: -2px; }
-.btn:active { box-shadow: 0 1px rgba(0,0,0,.2), inset 0 1px rgba(0,0,0,.05); outline: none; }
+.btn:active { box-shadow: 0 1px rgba(0,0,0,.2), inset 0 1px rgba(0,0,0,.05); -moz-box-shadow: 0 1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.05);
+-webkit-box-shadow: 0 1px rgba(0, 0, 0, 0.2), inset 0 1px rgba(0, 0, 0, 0.05);outline: none; }
 
 .icon{display: inline-block;_display: inline;vertical-align: text-top;_vertical-align: middle;*zoom: 1;overflow: hidden;}
 
